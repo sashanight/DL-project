@@ -1,0 +1,19 @@
+Task Movie Review
+
+Для тестирования задачи movie review (MR) нужно установить фреймворк SentEval - https://github.com/facebookresearch/SentEval, загрузить данные с помощью ./get_transfer_data.bash
+
+Использовались в movie review эмбеддинги - http://nlp.stanford.edu/data/glove.840B.300d.zip
+
+Модели в папке models.
+
+Результаты BOREP, ESN, RandLSTM для MR показаны в ipynb файлах с соответствующими названиями.
+
+Полученный результат для MR: с помощью BOREP - 77.4, в статье - 77.4; с помощью ESN - 76.6, в статье -  78.1; с помощью RandLSTM - 75.7, в статье - 77.2.
+
+
+
+Task Russian Tweets
+
+# TODO
+
+
