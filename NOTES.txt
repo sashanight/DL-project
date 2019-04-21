@@ -1,19 +1,34 @@
-Task Movie Review
 
-Для тестирования задачи movie review (MR) нужно установить фреймворк SentEval - https://github.com/facebookresearch/SentEval, загрузить данные с помощью ./get_transfer_data.bash
+Для тестирования нужно установить фреймворк SentEval - https://github.com/facebookresearch/SentEval, загрузить данные с помощью ./get_transfer_data.bash
 
-Использовались в movie review эмбеддинги - http://nlp.stanford.edu/data/glove.840B.300d.zip
+Использовались эмбеддинги - http://nlp.stanford.edu/data/glove.840B.300d.zip
 
-Модели в папке models.
+Модели для получения эмбеддинга предложения в папке models.
+
+Для классификации используется модель логистической регрессии. Пробовал многослойный перцептрон, но результаты хуже.
+
+
+
+
+Задача movie review (MR)
 
 Результаты BOREP, ESN, RandLSTM для MR показаны в ipynb файлах с соответствующими названиями.
 
-Полученный результат для MR: с помощью BOREP - 77.4, в статье - 77.4; с помощью ESN - 76.6, в статье -  78.1; с помощью RandLSTM - 75.7, в статье - 77.2.
+Полученный результат для MR: с помощью BOREP - 76.5, в статье - 77.4; с помощью ESN - 76.4, в статье -  78.1; с помощью RandLSTM - 75.9, в статье - 77.2.
+
+Результат для MR с помощью модели Infersent - 81.1, с помощью модели SkipThought - 79.4
 
 
 
-Task Russian Tweets
+Задача paraphrasing (MRPC)
 
-# TODO
+Результаты BOREP, ESN, RandLSTM для MR показаны в ipynb файлах с соответствующими названиями.
+
+Полученный результат для MRPC: с помощью BOREP - 72.5, в статье - 73.6; с помощью ESN - 70.7, в статье -  73.4; с помощью RandLSTM - 73.7, в статье - 74.1.
+
+Результат для MRPC с помощью модели Infersent - 76.4, с помощью модели SkipThought - 73.2
+
+
+ 
 
 
